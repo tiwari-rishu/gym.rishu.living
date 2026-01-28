@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with IronForge Gym. Visit us, call us, or book a free consultation today.">
+    <title>Contact Us | IronForge Gym</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">IRONFORGE <span style="color: #fff;">GYM</span></div>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="membership.html" class="btn" style="display: none;">Join Now</a>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1596357395217-80de13130e92?q=80&w=1471&auto=format&fit=crop') center/cover; padding: 8rem 5% 4rem; text-align: center;">
+        <h1>Contact Us</h1>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 1.2rem;">We're here to help you get started.</p>
+    </section>
+
+    <!-- Contact Info & Form -->
+    <section>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+
+            <!-- Info -->
+            <div>
+                <h2 style="color: var(--primary-color); margin-bottom: 2rem;">Get In Touch</h2>
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: #fff; margin-bottom: 0.5rem;">Visit Us</h4>
+                    <p style="color: #ccc;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--primary-color); width: 20px;"></i> 123 Fitness Blvd, Muscle City, ST
+                        12345</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: #fff; margin-bottom: 0.5rem;">Call Us</h4>
+                    <p style="color: #ccc;"><i class="fas fa-phone"
+                            style="color: var(--primary-color); width: 20px;"></i> (555) 123-4567</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: #fff; margin-bottom: 0.5rem;">Email Us</h4>
+                    <p style="color: #ccc;"><i class="fas fa-envelope"
+                            style="color: var(--primary-color); width: 20px;"></i> info@ironforgegym.com</p>
+                </div>
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: #fff; margin-bottom: 0.5rem;">Opening Hours</h4>
+                    <p style="color: #ccc;">Mon - Fri: 5:00 AM - 11:00 PM</p>
+                    <p style="color: #ccc;">Sat - Sun: 7:00 AM - 9:00 PM</p>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div style="background: #1c1c1e; padding: 2rem; border-radius: 10px;">
+                <h3 style="margin-bottom: 1.5rem;">Book a Free Consultation</h3>
+                <form onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #ccc;">Name</label>
+                        <input type="text" placeholder="Your Name"
+                            style="width: 100%; padding: 10px; background: #333; border: 1px solid #444; color: #fff; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #ccc;">Email</label>
+                        <input type="email" placeholder="Your Email"
+                            style="width: 100%; padding: 10px; background: #333; border: 1px solid #444; color: #fff; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #ccc;">Phone</label>
+                        <input type="tel" placeholder="Your Phone"
+                            style="width: 100%; padding: 10px; background: #333; border: 1px solid #444; color: #fff; border-radius: 5px;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; color: #ccc;">Goal</label>
+                        <select
+                            style="width: 100%; padding: 10px; background: #333; border: 1px solid #444; color: #fff; border-radius: 5px;">
+                            <option>Weight Loss</option>
+                            <option>Muscle Gain</option>
+                            <option>General Fitness</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section style="padding: 0;">
+        <div
+            style="width: 100%; height: 400px; background: #333; display: flex; justify-content: center; align-items: center; color: #666;">
+            <p><i class="fas fa-map" style="font-size: 3rem; margin-bottom: 1rem; display: block;"></i> Map Integration
+                Placeholder</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>IronForge Gym</h4>
+                <p>Forging elite fitness since 2015. Join us and become the best version of yourself.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Blvd, Muscle City</li>
+                    <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> info@ironforgegym.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 IronForge Gym. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

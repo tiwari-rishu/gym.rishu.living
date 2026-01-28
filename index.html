@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join IronForge Gym to start your fitness journey. We offer personal training, group classes, and nutrition plans to help you reach your goals.">
+    <title>IronForge Gym | Stronger Every Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Oswald:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">IRONFORGE <span style="color: #fff;">GYM</span></div>
+        <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="membership.html" class="btn" style="display: none;">Join Now</a>
+        <!-- Hidden on mobile initially via CSS if needed, or just keep in nav -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Stronger Every Day</h1>
+        <p>Your fitness journey starts here. Join a community dedicated to strength, health, and transformation.</p>
+        <div class="hero-btns">
+            <a href="membership.html" class="btn">Join Now</a>
+            <a href="contact.html" class="btn btn-outline">Book Free Trial</a>
+        </div>
+    </section>
+
+    <!-- Mission / Welcome Section -->
+    <section class="mission">
+        <div class="section-header">
+            <h2>Welcome to IronForge</h2>
+            <p>More than just a gym. We are a movement.</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; text-align: center;">
+            <div style="flex: 1 1 300px; background: #1c1c1e; padding: 2rem; border-radius: 10px;">
+                <i class="fas fa-dumbbell"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>World-Class Equipment</h3>
+                <p>Train with the best equipment in the industry, maintained daily for your safety and performance.</p>
+            </div>
+            <div style="flex: 1 1 300px; background: #1c1c1e; padding: 2rem; border-radius: 10px;">
+                <i class="fas fa-users" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Expert Trainers</h3>
+                <p>Our certified personal trainers are here to guide, motivate, and push you to your limits.</p>
+            </div>
+            <div style="flex: 1 1 300px; background: #1c1c1e; padding: 2rem; border-radius: 10px;">
+                <i class="fas fa-heartbeat"
+                    style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h3>Holistic Approach</h3>
+                <p>From nutrition planning to recovery, we care about your overall well-being, not just your muscles.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section class="registration" id="registration">
+        <div class="section-header">
+            <h2>Start Your Journey</h2>
+            <p>Fill out the form below to register specifically for IronForge Gym.</p>
+        </div>
+        <div class="registration-container">
+            <form class="registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="plan">Membership Plan</label>
+                    <select id="plan" name="plan" required>
+                        <option value="">Select a Plan</option>
+                        <option value="basic">Basic Membership</option>
+                        <option value="standard">Standard Membership</option>
+                        <option value="premium">Premium Membership</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="State, Country">
+                </div>
+                <div class="form-group">
+                    <label for="goals">Fitness Goals</label>
+                    <textarea id="goals" name="goals" rows="3"
+                        placeholder="Tell us about your fitness goals..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>IronForge Gym</h4>
+                <p>Forging elite fitness since 2025. Join us and become the best version of yourself.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Fitness Blvd, Muscle City</li>
+                    <li><i class="fas fa-phone"></i> (91) 9876543210</li>
+                    <li><i class="fas fa-envelope"></i> info@ironforgegym.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 rishutiwari Gym. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <i class="fas fa-check-circle" style="color: #4CAF50; font-size: 3rem; margin-bottom: 1rem;"></i>
+            <h3>Registration Successful!</h3>
+            <p>Your details have been prepared. Please click "Send" in your email client to complete the process.</p>
+            <button class="btn" id="closeModalBtn" style="margin-top: 1rem;">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
